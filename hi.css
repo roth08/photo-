@@ -1,0 +1,114 @@
+/* កំណត់ការរចនាទូទៅ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYOjnlcIPXphGhPJ8t_5oNuwh9omDpqzHhn5fkDYtyw&s=10') no-repeat ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* រចនាប្រអប់ Form ទាំងមូល */
+form {
+    /* ប្រើពណ៌សដែលមានភាពថ្លា 85% (rgba) */
+    background: rgba(255, 255, 255, 0.85); 
+    
+    /* បន្ថែម Blur Effect ឱ្យផ្ទៃខាងក្រោយ Form មើលទៅស្អាត */
+    backdrop-filter: blur(10px);
+    
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+}
+
+/* រចនាចំណងជើង និងអត្ថបទពន្យល់ */
+h2 {
+    color: #1e6a64;
+    margin-bottom: 8px;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    color: #217372;
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* រចនាលេប៊ែល (Label) */
+label {
+    display: inline-block;
+    font-weight: 600;
+    color: #7f7d03;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* រចនាប្រអប់បញ្ចូលទិន្នន័យ (Input Fields) */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* រចនា Checkbox */
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #456281;
+    cursor: pointer;
+}
+
+/* រចនាប៊ូតុង Submit (Sign Up) */
+input[type="submit"] {
+    width: 100%;
+    background-color: #456a92;
+    color: #e8d1d1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* រចនាតំណភ្ជាប់ Login (Link) */
+a {
+    color: #18314d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
